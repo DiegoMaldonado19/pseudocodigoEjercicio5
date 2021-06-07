@@ -1,0 +1,36 @@
+Algoritmo algoritmo5
+	Definir contadorMujeresMayores Como Entero
+	Definir contadorHombresMayores Como Entero
+	Definir edad Como Entero
+	Definir N Como Entero
+	Definir op Como Entero
+	op <- 0
+	N <- 0
+	Escribir 'Bienvenido'
+	Escribir '¿Cuantas edades deseas ingresar?'
+	Leer N
+	Para i<-1 Hasta N Hacer
+		Escribir 'Ingresa una opcion'
+		Escribir '1) Hombre'
+		Escribir '2) Mujer'
+		Leer op
+		Segun op  Hacer
+			1:
+				Escribir 'Ingresa tu edad'
+				Leer edad
+				Si edad>=18 Entonces
+					contadorHombresMayores <- contadorHombresMayores+1
+				FinSi
+			2:
+				Escribir 'Ingresa tu edad'
+				Leer edad
+				Si edad>=18 Entonces
+					contadorMujeresMayores <- contadorMujeresMayores+1
+				FinSi
+			De Otro Modo:
+				Escribir 'Opcion incorrecta, ingresa una opcion valida'
+		FinSegun
+	FinPara
+	Escribir 'La cantidad de hombres mayores es: ',contadorHombresMayores
+	Escribir 'La cantidad de mujeres mayores es: ',contadorMujeresMayores
+FinAlgoritmo
